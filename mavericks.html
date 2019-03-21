@@ -1,320 +1,367 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8" />
-	<title>CSS OS X</title>
-	<link rel="stylesheet" href="css/style.css">
-	<link href="css/font-awesome-4.0.3/css/font-awesome.min.css" rel="stylesheet"/>
-	<!--Project page styles-->
-	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="css/demo.css" />
-    <link rel="stylesheet" type="text/css" href="css/card-4.css" />
-    <link rel="stylesheet" type="text/css" href="css/pattern-4.css" />
-	<style type="text/css">
-		a {text-decoration: none;color: black;}
-		.container{display: block;border-radius: 1em; background: #ffffffa1;width: 98%; margin:2.2em auto; min-height: 800px; padding:2em;box-sizing: border-box; }
-		h1{font-size: 4em; font-kerning: .5; font-weight: lighter;}
-	</style>
+    <meta charset="UTF-8"/>
+    <title>CSS OS X</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/font-awesome-4.0.3/css/font-awesome.min.css" rel="stylesheet"/>
+    <!--Project page styles-->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/demo.css"/>
+    <link rel="stylesheet" type="text/css" href="css/card-4.css"/>
+    <link rel="stylesheet" type="text/css" href="css/pattern-4.css"/>
+    <style type="text/css">
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .container {
+            display: block;
+            border-radius: 1em;
+            background: #ffffffa1;
+            width: 98%;
+            margin: 2.2em auto;
+            min-height: 800px;
+            padding: 2em;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 4em;
+            font-kerning: .5;
+            font-weight: lighter;
+        }
+    </style>
 </head>
 <body>
 <!-- <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script> -->
 <script type="text/javascript" src="js/typewriter.js"></script>
 <script type="text/javascript">
-	function toggle_intro() {	
-	  var x = document.getElementById("intro");
-	  if (x.style.display === "none") {
-	    x.style.display = "block";
-	  } else {
-	    x.style.display = "none";
-	  }
-	}
-	function toggle_pj() {	
-	  var x = document.getElementById("pj");
-	  if (x.style.display === "none") {
-	    x.style.display = "block";
-	  } else {
-	    x.style.display = "none";
-	  }
-	}
-	function close(){
-		alert("hi");
-		document.getElementById("close").parentNode.style.display="none";
-		alert("hello");
-	}
+    function toggle_intro() {
+        var x = document.getElementById("intro");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+
+    function toggle_pj() {
+        var x = document.getElementById("pj");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+
+    function closeFun() {
+        alert("hi");
+        document.getElementById("close").parentNode.style.display = "none";
+        alert("hello");
+    }
 </script>
 
-	<p id="copyright">test</p>
+<p id="copyright">test</p>
 
-	<div id="main_menubar">
-		<div class="menubar_layout"></div>
-		<ul>
-			<li class="apple_logo">
-				<i class="fa fa-apple" style="opacity: 0.8; font-size:20px; margin-top:2px"></i>
-				<ul>
-					<li id="about_this_mac_btn"><a href="https://hanjing7.github.io/"><p>Jing's Github Blog</p></a></li>
-					<li><a href="http://hanjing7.com/"><p>Jing's Previous Site</p></a></li>
-					<li>
-						<p>App Store...</p>
-					</li>
-					<div class="split_line"></div>
-					<li>
-						<p>System Preferences...</p>
-					</li>
-					<li>
-						<p>Dock</p>
-						<div class="right_arrow_space"></div>
-						<div class="right_arrow">▶</div>
-						<ul>
-							<li>
-								<p>Turn Hidding On</p>
-								<div class="right_arrow_space">⌥⌘D</div>
-								<div class="right_arrow">⌥⌘D</div>
-							</li>
-							<li>
-								<p>Turn Magnification On</p>
-							</li>
-							<div class="split_line"></div>
-							<li>
-								<p>Position on Left</p>
-							</li>
-							<li>
-								<div class="left_check">✓</div>
-								<p>Position on Bottom</p>
-							</li>
-							<li>
-								<p>Position on Right</p>
-							</li>
-							<div class="split_line"></div>
-							<li>
-								<p>Dock Preferences...</p>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<p>Location</p>
-						<div class="right_arrow_space">▶</div>
-						<div class="right_arrow">▶</div>
-						<ul>
-							<li>
-								<div class="left_check">✓</div>
-								<p>Automatic</p>
-							</li>
-							<li>
-								<p>Location (12-12-15 PM2:06)</p>
-							</li>
-							<li>
-								<p>Location (12-12-15 PM2:07)</p>
-							</li>
-							<li>
-								<p>Location (12-12-21 PM3:50)</p>
-							</li>
-							<div class="split_line"></div>
-							<li>
-								<p>Network Preferences...</p>
-							</li>
-						</ul>
-					</li>
-					<div class="split_line"></div>
-					<li>
-						<p>Public Projects</p>
-						<div class="right_arrow_space">▶</div>
-						<div class="right_arrow">▶</div>
-						<ul>
-								<div class="menu_block">
-									<p>FINRA</p>
-									<li id="browser_btn"><a href="https://brokercheck.finra.org/" target="_blank"><p>BrokerCheck</p></a></li>
-									<li><a href="https://ofac.finra.org/#/" target="_blank"><p>OFAC Search Tool</p></a></li>
-									<li><a href="https://tools.finra.org/fund_analyzer/" target="_blank"><p>Fund Analyzer</p></a></li>
-								</div>
-								<div class="split_line"></div>
-								<div class="menu_block">
-									<p>FINRA Sides Project</p>
-									<li><a href="https://www.finra.org/compliance-calendar" target="_blank"><p>Compliance Calendar</p></a></li>
-									<li><a href="https://www.finra.org/compliance-calendar" target="_blank"><p>Investor.gov</p></a></li>
-									<li><a href="https://www.finra.org/compliance-calendar" target="_blank"><p>Compliance Calendar</p></a></li>
-								</div>
-								<div class="split_line"></div>
-								<div class="menu_block">
-									<p>Nexient</p>
-									<li><a href="http://mylife.adpts.com/" target="_blank"><p>ADP Portal</p></a></li>
-									<li>
-										<p>root</p>
-									</li>
-								</div>
-								<div class="split_line"></div>
-								<li>
-									<p>Clear Menu</p>
-								</li>
-						</ul>
-					</li>
-					<div class="split_line"></div>
-					<li>
-						<p class="grey_li">Force Quit...</p>
-						<div class="right_arrow_space">⌥⌘⎋</div>
-						<div class="right_arrow">⌥⌘⎋</div>
-					</li>
-					<div class="split_line"></div>
-					<li>
-						<p>Sleep</p>
-					</li>
-					<li>
-						<p>Restart...</p>
-					</li>
-					<li id="shutdown">
-						<p>Shut Down...</p>
-					</li>
-					<div class="split_line"></div>
-					<li>
-						<p>Log Out ds...</p>
-						<div class="right_arrow_space">⇧⌘Q</div>
-						<div class="right_arrow">⇧⌘Q</div>
-					</li>
-				</ul>
-			</li>
-			
+<div id="main_menubar">
+    <div class="menubar_layout"></div>
+    <ul>
+        <li class="apple_logo">
+            <i class="fa fa-apple" style="opacity: 0.8; font-size:20px; margin-top:2px"></i>
+            <ul>
+                <li id="about_this_mac_btn"><a href="https://hanjing7.github.io/"><p>Jing's Github Blog</p></a></li>
+                <li><a href="http://hanjing7.com/"><p>Jing's Previous Site</p></a></li>
+                <li>
+                    <p>App Store...</p>
+                </li>
+                <div class="split_line"></div>
+                <li>
+                    <p>System Preferences...</p>
+                </li>
+                <li>
+                    <p>Dock</p>
+                    <div class="right_arrow_space"></div>
+                    <div class="right_arrow">▶</div>
+                    <ul>
+                        <li>
+                            <p>Turn Hidding On</p>
+                            <div class="right_arrow_space">⌥⌘D</div>
+                            <div class="right_arrow">⌥⌘D</div>
+                        </li>
+                        <li>
+                            <p>Turn Magnification On</p>
+                        </li>
+                        <div class="split_line"></div>
+                        <li>
+                            <p>Position on Left</p>
+                        </li>
+                        <li>
+                            <div class="left_check">✓</div>
+                            <p>Position on Bottom</p>
+                        </li>
+                        <li>
+                            <p>Position on Right</p>
+                        </li>
+                        <div class="split_line"></div>
+                        <li>
+                            <p>Dock Preferences...</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>Location</p>
+                    <div class="right_arrow_space">▶</div>
+                    <div class="right_arrow">▶</div>
+                    <ul>
+                        <li>
+                            <div class="left_check">✓</div>
+                            <p>Automatic</p>
+                        </li>
+                        <li>
+                            <p>Location (12-12-15 PM2:06)</p>
+                        </li>
+                        <li>
+                            <p>Location (12-12-15 PM2:07)</p>
+                        </li>
+                        <li>
+                            <p>Location (12-12-21 PM3:50)</p>
+                        </li>
+                        <div class="split_line"></div>
+                        <li>
+                            <p>Network Preferences...</p>
+                        </li>
+                    </ul>
+                </li>
+                <div class="split_line"></div>
+                <li>
+                    <p>Public Projects</p>
+                    <div class="right_arrow_space">▶</div>
+                    <div class="right_arrow">▶</div>
+                    <ul>
+                        <div class="menu_block">
+                            <p>FINRA</p>
+                            <li id="browser_btn"><a href="https://brokercheck.finra.org/" target="_blank"><p>
+                                BrokerCheck</p></a></li>
+                            <li><a href="https://ofac.finra.org/#/" target="_blank"><p>OFAC Search Tool</p></a></li>
+                            <li><a href="https://tools.finra.org/fund_analyzer/" target="_blank"><p>Fund Analyzer</p>
+                            </a></li>
+                        </div>
+                        <div class="split_line"></div>
+                        <div class="menu_block">
+                            <p>FINRA Sides Project</p>
+                            <li><a href="https://www.finra.org/compliance-calendar" target="_blank"><p>Compliance
+                                Calendar</p></a></li>
+                            <li><a href="https://www.finra.org/compliance-calendar" target="_blank"><p>Investor.gov</p>
+                            </a></li>
+                            <li><a href="https://www.finra.org/compliance-calendar" target="_blank"><p>Compliance
+                                Calendar</p></a></li>
+                        </div>
+                        <div class="split_line"></div>
+                        <div class="menu_block">
+                            <p>Nexient</p>
+                            <li><a href="http://mylife.adpts.com/" target="_blank"><p>ADP Portal</p></a></li>
+                            <li>
+                                <p>root</p>
+                            </li>
+                        </div>
+                        <div class="split_line"></div>
+                        <li>
+                            <p>Clear Menu</p>
+                        </li>
+                    </ul>
+                </li>
+                <div class="split_line"></div>
+                <li>
+                    <p class="grey_li">Force Quit...</p>
+                    <div class="right_arrow_space">⌥⌘⎋</div>
+                    <div class="right_arrow">⌥⌘⎋</div>
+                </li>
+                <div class="split_line"></div>
+                <li>
+                    <p>Sleep</p>
+                </li>
+                <li>
+                    <p>Restart...</p>
+                </li>
+                <li id="shutdown">
+                    <p>Shut Down...</p>
+                </li>
+                <div class="split_line"></div>
+                <li>
+                    <p>Log Out ds...</p>
+                    <div class="right_arrow_space">⇧⌘Q</div>
+                    <div class="right_arrow">⇧⌘Q</div>
+                </li>
+            </ul>
+        </li>
 
-			<div id="right_icon">
-				<li>
-					<p id="system_time"></p>
-					<ul>
-						<li class="grey_li">
-							<p id="system_date_line"></p>
-						</li>
-						<div class="split_line"></div>
-						<li>
-							<p>View as Analog</p>
-						</li>
-						<li>
-							<div class="left_check">✓</div>
-							<p>View as Digital</p>
-						</li>
-						<div class="split_line"></div>
-						<li>
-							<p>Open Date & Time Preferences...</p>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<i class="fa fa-lock"></i>
-				</li>
-				<li>
-					<p>ds</p>
-					<ul>
-						<li class="user_bar grey_li">
-							<p>ds</p>
-						</li>
-						<div class="split_line"></div>
-						<li>
-							<p>Login Window...</p>
-						</li>
-						<div class="split_line"></div>
-						<li>
-							<p>Users & Groups Preferences...</p>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<i class="fa fa-volume-up system_volume" style="width:14px"></i>
-					<ul class="system_volume">
-						<input type="range" id="volume"/>
-					</ul>
-				</li>
-				<li>
-					<i class="fa fa-search"></i>
-					<ul class="spotlight">
-						<li class="spotlight_bar">
-							<p>Spotlight</p>
-							<input type="search">
-						</li>
-					</ul>
-				</li>
-				<li class="sidebar_btn">
-					<i class="fa fa-list"></i>
-				</li>
-			</div>
-		</ul>
-	</div>
-	<div class="finder"></div>
+
+        <div id="right_icon">
+            <li>
+                <p id="system_time"></p>
+                <ul>
+                    <li class="grey_li">
+                        <p id="system_date_line"></p>
+                    </li>
+                    <div class="split_line"></div>
+                    <li>
+                        <p>View as Analog</p>
+                    </li>
+                    <li>
+                        <div class="left_check">✓</div>
+                        <p>View as Digital</p>
+                    </li>
+                    <div class="split_line"></div>
+                    <li>
+                        <p>Open Date & Time Preferences...</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <i class="fa fa-lock"></i>
+            </li>
+            <li>
+                <p>ds</p>
+                <ul>
+                    <li class="user_bar grey_li">
+                        <p>ds</p>
+                    </li>
+                    <div class="split_line"></div>
+                    <li>
+                        <p>Login Window...</p>
+                    </li>
+                    <div class="split_line"></div>
+                    <li>
+                        <p>Users & Groups Preferences...</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <i class="fa fa-volume-up system_volume" style="width:14px"></i>
+                <ul class="system_volume">
+                    <input type="range" id="volume"/>
+                </ul>
+            </li>
+            <li>
+                <i class="fa fa-search"></i>
+                <ul class="spotlight">
+                    <li class="spotlight_bar">
+                        <p>Spotlight</p>
+                        <input type="search">
+                    </li>
+                </ul>
+            </li>
+            <li class="sidebar_btn">
+                <i class="fa fa-list"></i>
+            </li>
+        </div>
+    </ul>
+</div>
+<div class="finder"></div>
 
 <div class="container" id="intro">
-	<button class="hide" onclick="close();" id="close">Close</button>
-	<h1>Welcome to Jing's Page</h1>
-	<h2>I'm a <span class="title">designer, coder, and thinker</span></h2>
+    <button class="hide" onclick="closeFun();" id="close">Close</button>
+    <h1>Welcome to Jing's Page</h1>
+    <h2>I'm a <span class="title">designer, coder, and thinker</span></h2>
 </div>
 
 <div class="container demo-4" id="pj">
-	<header class="codrops-header">
-		<h1>Design Projects<span>Worked on in previous positions</span></h1>
-	</header>
-	<div class="content">
-		<!-- trianglify pattern container -->
-		<div class="pattern pattern--hidden"></div>
-		<!-- cards -->
-		<div class="wrapper">
-			<div class="card">
-				<div class="card__container card__container--closed">
-					<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1200" preserveAspectRatio="xMidYMid slice">
-						<defs>
-							<clipPath id="clipPath1">
-								<polygon class="clip" points="0,1200 0,0 1920,0 1920,1200"></polygon>
-							</clipPath>
-						</defs>
-						<image clip-path="url(#clipPath1)" width="1920" height="1200" xlink:href="img/a.png"></image>
-					</svg>
-					<div class="card__content">
-						<i class="card__btn-close fa fa-times"></i>
-						<div class="card__caption">
-							<h2 class="card__title">Fund Analyzer</h2>
-							<p class="card__subtitle">Fund Educating Tool for investors who has little knowledge</p>
-						</div>
-						<div class="card__copy">
-							<div class="meta">
-								<img class="meta__avatar" src="img/authors/1.png" alt="author01" />
-								<span class="meta__author">Gerry Sutherland</span>
-								<span class="meta__date">06/19/2015</span>
-							</div>
-							<p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>
-							<p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>
-							<p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>
-							<img src="img/a.png">
-							<p>Stock infrastructure seed round sales paradigm shift technology user experience focus gamification. Partnership metrics business plan stealth business-to-business. Deployment graphical user interface monetization. Twitter incubator scrum project entrepreneur branding burn rate ramen backing paradigm shift virality crowdsource.</p>
-							<p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period MVP equity. Focus creative partnership founders iteration agile development infographic.</p>
-							<p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative launch party product management release. Www.discoverartisans.com influencer business model canvas user experience gamification paradigm shift startup research &amp; development iPad agile development. Strategy incubator infographic success marketing buzz A/B testing responsive web design. Traction research &amp; development pitch seed money venture niche market accelerator network effects.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- /cards -->
-	</div>
-	<!-- Related demos -->
+    <header class="codrops-header">
+        <h1>Design Projects<span>Worked on in previous positions</span></h1>
+    </header>
+    <div class="content">
+        <!-- trianglify pattern container -->
+        <div class="pattern pattern--hidden"></div>
+        <!-- cards -->
+        <div class="wrapper">
+            <div class="card">
+                <div class="card__container card__container--closed">
+                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1200"
+                         preserveAspectRatio="xMidYMid slice">
+                        <defs>
+                            <clipPath id="clipPath1">
+                                <polygon class="clip" points="0,1200 0,0 1920,0 1920,1200"></polygon>
+                            </clipPath>
+                        </defs>
+                        <image clip-path="url(#clipPath1)" width="1920" height="1200" xlink:href="img/a.png"></image>
+                    </svg>
+                    <div class="card__content">
+                        <i class="card__btn-close fa fa-times"></i>
+                        <div class="card__caption">
+                            <h2 class="card__title">Fund Analyzer</h2>
+                            <p class="card__subtitle">Fund Educating Tool for investors who has little knowledge</p>
+                        </div>
+                        <div class="card__copy">
+                            <div class="meta">
+                                <img class="meta__avatar" src="img/authors/1.png" alt="author01"/>
+                                <span class="meta__author">Gerry Sutherland</span>
+                                <span class="meta__date">06/19/2015</span>
+                            </div>
+                            <p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market
+                                alpha conversion startup down monetization partnership business-to-consumer success for
+                                investor mass market business-to-business.</p>
+                            <p>Release creative social proof influencer iPad crowdsource gamification learning curve
+                                network effects monetization. Gamification business plan mass market
+                                www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting
+                                period.</p>
+                            <p>Product management ramen bootstrapping seed round venture holy grail technology backing
+                                partner network entrepreneur beta marketing value proposition. Android stealth
+                                conversion scrum project network effects. Creative alpha long tail conversion stealth
+                                growth hacking iteration investor A/B testing prototype customer. Startup
+                                www.discoverartisans.com direct mailing launch party partnership market ramen metrics
+                                focus value proposition.</p>
+                            <!--<img src="img/a.png">-->
+                            <p>Stock infrastructure seed round sales paradigm shift technology user experience focus
+                                gamification. Partnership metrics business plan stealth business-to-business. Deployment
+                                graphical user interface monetization. Twitter incubator scrum project entrepreneur
+                                branding burn rate ramen backing paradigm shift virality crowdsource.</p>
+                            <p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period
+                                MVP equity. Focus creative partnership founders iteration agile development
+                                infographic.</p>
+                            <p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative
+                                launch party product management release. Www.discoverartisans.com influencer business
+                                model canvas user experience gamification paradigm shift startup research &amp;
+                                development iPad agile development. Strategy incubator infographic success marketing
+                                buzz A/B testing responsive web design. Traction research &amp; development pitch seed
+                                money venture niche market accelerator network effects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /cards -->
+    </div>
+    <!-- Related demos -->
 </div><!--End Container-->
 
-	<div id="dockbottom">
-		<div id="container">
-			<img onclick="toggle_intro();" src="images/About.png">
-			<img onclick="toggle_pj();" src="images/Project.png">
-			<img src="images/Graphics.png">
-			<img src="images/Code.png">
-			<img src="images/Contact.png">
-			<!-- <img src="images/About.png">
-			<img src="images/Project.png">
-			<img src="images/Graphics.png">
-			<img src="images/Code.png">
-			<img src="images/Contact.png"> -->
-			<div id="bg"></div>
-		</div>
-	</div>
+<div id="dockbottom">
+    <div id="container">
+        <img onclick="toggle_intro();" src="images/About.png">
+        <img onclick="toggle_pj();" src="images/Project.png">
+        <img src="images/Graphics.png">
+        <img src="images/Code.png">
+        <img src="images/Contact.png">
+        <img src="images/About.png">
+        <img src="images/Project.png">
+        <img src="images/Graphics.png">
+        <img src="images/Code.png">
+        <!--<img src="images/Contact.png">-->
+        <div id="bg"></div>
+    </div>
+</div>
 
 <!--Project Page Libraries-->
-    <script src="js/vendors/trianglify.min.js"></script>
-    <script src="js/vendors/TweenMax.min.js"></script>
-    <script src="js/vendors/ScrollToPlugin.min.js"></script>
-    <script src="js/vendors/cash.min.js"></script>
-    <script src="js/Card-polygon-4.js"></script>
-    <script src="js/demo-4.js"></script>
+<script src="js/vendors/trianglify.min.js"></script>
+<script src="js/vendors/TweenMax.min.js"></script>
+<script src="js/vendors/ScrollToPlugin.min.js"></script>
+<script src="js/vendors/cash.min.js"></script>
+<script src="js/Card-polygon-4.js"></script>
+<script src="js/demo-4.js"></script>
 
 <!--Nav Libraries-->
-  <script type="text/javascript" src="js/dock.js"></script>
+<script type="text/javascript" src="js/dock.js"></script>
 </body>
 </html>

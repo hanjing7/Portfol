@@ -5,12 +5,16 @@
 *	License: GPL2
 */
 ;(function() {
-    var tmp = document.getElementById("container").childNodes;
-    alert(tmp);
-    var tmp2 = tmp.filter{i => i.tagName == "IMG";};
-    alert(tmp2);
-    var ICON_NUMBER = tmp2.length;
-    alert(ICON_NUMBER);
+
+    var icons = document.getElementById("container").childNodes;
+    var cnt = 0;
+    for (var i = 0; i < icons.length; ++i){
+        if (icons[i].tagName === "IMG") {
+            cnt ++;
+        }
+    }
+
+    var ICON_NUMBER = cnt;
     var ICON_MIN_WIDTH = 64;
     var ICON_MAX_WIDTH = 128;
 
